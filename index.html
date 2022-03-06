@@ -22,7 +22,7 @@
       <br>
       5 seconds will be deducted from the timer for every incorrect answer.
     </p>
-    <button id="start-button" type="button" class="btn">Start</button>
+    <button id="start-button" class="btn">Start</button>
   </div>
 
   <!-- quiz questions section -->
@@ -30,9 +30,9 @@
     <div id="quiz-questions" class="container hide">
       <h3 class="timer">Timer:</h3>
 
-      <div id="question-card" class="w3-card-2">
+      <div id="question-card" class="card">
 
-        <header class="w3-container">
+        <header class="container">
           <h3 id="question">Sample Question</h3>
         </header>
 
@@ -58,7 +58,35 @@
     </div>
 
     <!-- highscore button -->
-    <button id="highscore-button" type="button" class="btn">View High Scores</button>
+    <button id="highscore-button" class="btn">View High Scores</button>
+
+    <!-- end of quiz to input highscore -->
+    <section id="input-score" class="container hide">
+      <h1>Quiz Completed</h1>
+
+      <h2>You scored <span id="score-button" class="btn">Score</span> points.</h2>
+
+      <form>
+        <label for="initials-box">Enter Your Initials Here:</label>
+        <br>
+        <input id="initials-box" type="text">
+        <br>
+        <input id="submit-button" type="submit" class="btn">
+      </form>
+    </section>
+
+    <!-- highscore section -->
+    <section id="high-score" class="container hide">
+      <div id="score-card" class="card">
+        <header class="container">
+          <h1>Top Scores:</h1>
+        </header>
+      </div>
+
+      <button id="back-button" class="btn">Go Back to Home</button>
+      <button id="clear-button" class="btn">Clear High Scores</button>
+    </section>
+
   </main>
   <!-- javascript -->
   <script src="./assets/script.js"></script>
