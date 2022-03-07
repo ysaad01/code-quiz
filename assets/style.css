@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+.hide {
+  display: none;
+}
