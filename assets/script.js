@@ -10,7 +10,8 @@ var choiceA = document.querySelector("#multiple-choice-A");
 var choiceB = document.querySelector("#multiple-choice-B");
 var choiceC = document.querySelector("#multiple-choice-C");
 var choiceD = document.querySelector("#multiple-choice-D");
-var checkAnswer = document.querySelector("#check-answer");
+var checkAnswerCorrect = document.querySelector(".check-answer-correct");
+var checkAnswerIncorrect = document.querySelector(".check-answer-incorrect");
 var inputScore = document.querySelector("#input-score");
 var scoreBtn = document.querySelector("#score-button");
 var highScore = document.querySelector("#high-score");
@@ -127,7 +128,7 @@ function startTimer() {
     timeLeft--;
     timer.textContent = "Timer: " + timeLeft;
 
-    if (timeLeft === 0 || i >= questionArray) {
+    if (timeLeft < 0 || i >= questionArray) {
       clearInterval(setTimeInterval);
       endQuiz();
     }
@@ -141,10 +142,10 @@ function answerSelection(event) {
     clearInterval(setTimeInterval);
   } else {
     if (event === questionArray[i].answer) {
-      checkAnswer.textContent = "Correct";
+      checkAnswerCorrect.textContent = "Correct";
     } else {
       timeLeft -= 10;
-      checkAnswer.textContent = "Incorrect";
+      checkAnswerIncorrect.textContent = "Incorrect";
     }
     score = timeLeft;
     i++;
