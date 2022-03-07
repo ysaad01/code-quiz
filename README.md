@@ -27,4 +27,4 @@ THEN I can save my initials and score
 - Deployed Website Link: https://ysaad01.github.io/code-quiz/
 - GitHub Repo: https://github.com/ysaad01/code-quiz 
 
-![Screenshot of my code quiz]()
+![Screenshot of my code quiz](/assets/images/code-quiz-screenshot.png)
