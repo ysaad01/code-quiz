@@ -10,7 +10,7 @@ var choiceA = document.querySelector("#multiple-choice-A");
 var choiceB = document.querySelector("#multiple-choice-B");
 var choiceC = document.querySelector("#multiple-choice-C");
 var choiceD = document.querySelector("#multiple-choice-D");
-var checkAnswerCorrect = document.querySelector(".check-answer-correct");
+var checkAnswerCorrect = document.querySelector("#check-answer-correct");
 var checkAnswerIncorrect = document.querySelector(".check-answer-incorrect");
 var inputScore = document.querySelector("#input-score");
 var scoreBtn = document.querySelector("#score-button");
@@ -193,7 +193,7 @@ function scoreBoard() {
     scoreBoardDiv.appendChild(newDiv);
 
     var newLabel = document.createElement("label");
-    newLabel.textContent = user + " : " + userScore;
+    newLabel.textContent = user + ": " + userScore;
     newDiv.appendChild(newLabel);
   }
 }
