@@ -1,9 +1,140 @@
+/* general styling */
 body {
-  text-align: center;
+  font-family: Helvetica, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
   margin: auto;
   padding: auto;
+  background-color: #F7C56F;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hide {
   display: none;
+}
+
+/* start page styling */
+.start {
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 33vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  border-radius: 15px;
+  box-shadow: 0.75px 0.75px #000;
+}
+
+#start-button {
+  margin-bottom: 2vh;
+}
+
+.start h1 {
+  color: #993636;
+  font-size: 2.5rem;
+  text-shadow: 0.75px 0.75px #000;
+}
+
+.start p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+/* end of start page styling */
+
+
+/* button styling */
+.btn {
+  padding: 1.25vh 2.25vw;
+  background-color: #AC5341;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4.5px;
+}
+
+.btn:hover {
+  background: #5D341D;
+}
+
+#highscore-button {
+  margin-top: 5vw;
+}
+/* end of button styling */
+
+/* quiz styling */
+#question {
+  color: #4C1A1B;
+  font-size: 3rem;
+  text-shadow: 0.25px 0.25px #fff;
+}
+
+#multiple-choice {
+  margin: 50px 50px;
+}
+
+.answer-line {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 10px 350px;
+  padding: 25px 15px;
+  border-radius: 15px;
+}
+
+.answer-line:hover {
+  background: #996515;
+  color: white;
+}
+
+
+#check-answer-correct {
+  color: #4C1A1B;
+  font-size: 2.65rem;
+  text-shadow: 0.75px 0.75px #fff;
+  font-weight: bolder;
+}
+
+.timer {
+  color: #4C1A1B;
+  font-size: 2.5rem;
+  text-shadow: 0.75px 0.75px #000;
+  text-align: right;
+  margin-right: 25px;
+}
+/* end quiz styling */
+#input-score h1 {
+  color: #993636;
+  font-size: 3.5rem;
+  text-shadow: 0.75px 0.75px #000;
+}
+
+#score-button {
+  font-size: larger;
+  color: #993636;
+  text-shadow: 0.75px 0.75px #000;
+}
+
+form {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+input {
+  outline: none;
+  margin-top: 1.25vh;
+  padding: 5px 25px;
+  text-align: center;
+}
+/* end of end quiz styling */
+
+/* highscore styling */
+#high-score h1 {
+  color: #993636;
+  font-size: 3.5rem;
+  text-shadow: 0.75px 0.75px #000;
+}
+
+#scoreBoard {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
 }
